@@ -3,8 +3,7 @@
 * Plugin Name: Cyclone Demo Importer
 * Description: Import all the demos on your site
 * Author: ravisakya, cyclonetheme
-* Author URI: https://cyclonethemes.com/
-* Version: 1.6
+* Version: 1.7
 * License: GPL2+
 * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 * 
@@ -115,6 +114,10 @@ switch ( $my_theme->Name ) {
 	case 'Eye Catching Blog':
 		require CDI_PLUGIN_DIR_PATH . 'themes/eye-catching-blog-lite/demo.php';
 		break;
+
+	case 'Eye Catching Blog PRO':
+		require CDI_PLUGIN_DIR_PATH . 'themes/eye-catching-blog-pro/demo.php';
+		break;
 	
 	default:
 		# code...
@@ -162,7 +165,9 @@ function cdi_redirect() {
 			'business-event',
 			'business-event-pro',
 			'my-travel-blogs',
-			'my-travel-blogs-pro'
+			'my-travel-blogs-pro',
+			'eye-catching-blog',
+			'eye-catching-blog-pro'
 		);
 
 		if( in_array( $theme->get( 'TextDomain' ) , $available_themes ) ){			
@@ -384,6 +389,8 @@ function cdi_before_content_import( $selected_import ) {
 
         case 'My Travel Blogs Free':
         case 'My Travel Blogs PRO':
+        case 'Eye Catching Blog':
+        case 'Eye Catching Blog PRO':
 
         	// Skip install extra plugins
         

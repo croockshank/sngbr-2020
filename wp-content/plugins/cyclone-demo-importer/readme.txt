@@ -1,15 +1,18 @@
 === Cyclone Demo Importer ===
+
 Contributors: ravisakya, cyclonetheme
 Tags: demo data, one click demo import
 Requires at least: 4.9
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Import Dummy data for themes developed by Cyclone Themes.
+
 == Description ==
+
 A easy plugin to import dummy data for themes by Cyclone Themes.
 
 == Installation ==
@@ -22,5 +25,6 @@ A easy plugin to import dummy data for themes by Cyclone Themes.
 4. Go to the Appearance -> Demo Data
 
 == Frequently Asked Questions ==
+
 1. Where I can see the Settings?
 Check all the available options inside Appearance > Import Demo Import
